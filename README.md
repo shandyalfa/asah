@@ -1,9 +1,5 @@
 # ChemAI — Novel Chemicals Discovery Agent 🧪
 
-https://www.python.org/downloads/
-https://fastapi.tiangolo.com/
-https://nodejs.org/
-
 Platform **Agentic AI** untuk eksplorasi dan penemuan kandidat senyawa petrokimia berbasis kriteria fisik & kimia, dengan **reasoning transparan** menggunakan **Google Gemini 2.5 Flash**.
 
 > Status: prototype / research tool (bisa dikembangkan untuk produksi)
@@ -12,7 +8,14 @@ Platform **Agentic AI** untuk eksplorasi dan penemuan kandidat senyawa petrokimi
 
 ## 🖼️ Tampilan Aplikasi (Screenshots)
 
+> Tambahkan file gambar ke folder `docs/images/` lalu update path berikut.
 
+<img width="646" height="234" alt="image" src="https://github.com/user-attachments/assets/c2a42715-8bd8-4e8e-957d-09fafd22db02" />
+![ChemAI Screenshot 2](docs/images/screenshot-2.png)
+<img width="285" height="77" alt="image" src="https://github.com/user-attachments/assets/77f401d3-36fa-4f87-b4ba-3e08f174cd08" />
+![ChemAI Screenshot 4](docs/images/screenshot-4.png)
+
+---
 
 ## 📖 Deskripsi Proyek
 
@@ -177,7 +180,8 @@ npm run start-dev
 ```
 
 Akses:
-- Frontend: `http://localhost:3000`
+- Frontend dev: `http://localhost:9000`
+- Frontend dev: `http://localhost:8080`
 - Swagger: `http://localhost:8000/docs`
 - Redoc: `http://localhost:8000/redoc`
 
@@ -204,7 +208,7 @@ uvicorn agent.main:app --host 0.0.0.0 --port 8000 --workers 4
 
 ### 1) Registrasi
 Buka:
-- `http://localhost:3000/#/register`
+- `http://localhost:8080/#/register`
 
 Isi:
 - Name
@@ -212,7 +216,7 @@ Isi:
 - Password (min. 8 karakter)
 
 ### 2) Login
-- `http://localhost:3000/#/login`  
+- `http://localhost:8080/#/login`  
 Token JWT disimpan di `localStorage`.
 
 ### 3) Mencari kandidat senyawa
@@ -429,7 +433,7 @@ pip uninstall rdkit rdkit-pypi
 pip install rdkit-pypi
 ```
 
-### Port 8000/3000 sudah dipakai
+### Port 8000/8080 sudah dipakai
 **macOS/Linux**
 ```bash
 lsof -ti:8000 | xargs kill -9
@@ -452,7 +456,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
