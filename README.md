@@ -1,8 +1,9 @@
 # ChemAI — Novel Chemicals Discovery Agent 🧪
 
-https://www.python.org/downloads/
-https://fastapi.tiangolo.com/
-https://nodejs.org/
+**Quick links:**  
+- Python (3.10+): https://www.python.org/downloads/  
+- FastAPI: https://fastapi.tiangolo.com/  
+- Node.js (18+): https://nodejs.org/  
 
 Platform **Agentic AI** untuk eksplorasi dan penemuan kandidat senyawa petrokimia berbasis kriteria fisik & kimia, dengan **reasoning transparan** menggunakan **Google Gemini 2.5 Flash**.
 
@@ -12,7 +13,12 @@ Platform **Agentic AI** untuk eksplorasi dan penemuan kandidat senyawa petrokimi
 
 ## 🖼️ Tampilan Aplikasi (Screenshots)
 
+<img width="1898" height="902" alt="ChemAI Screenshot 1" src="https://github.com/user-attachments/assets/81e3f58b-9e7b-45ef-aae0-845037fbfa61" />
+<img width="1897" height="899" alt="ChemAI Screenshot 2" src="https://github.com/user-attachments/assets/9f8540ff-c5e5-4142-8d82-c09ddf570020" />
+<img width="1918" height="895" alt="ChemAI Screenshot 3" src="https://github.com/user-attachments/assets/a7474f49-fdb6-4271-b723-c6ed20f458d9" />
+<img width="984" height="571" alt="ChemAI Screenshot 4" src="https://github.com/user-attachments/assets/21c12b83-2b2f-4e15-a6e9-99ab68039968" />
 
+---
 
 ## 📖 Deskripsi Proyek
 
@@ -45,7 +51,7 @@ Multi-step reasoning yang dilakukan:
 ### Backend
 - **FastAPI** (Python 3.10+)
 - **Google Gemini 2.5 Flash API** (SDK: `google-genai`)
-- **RDKit** (render struktur molekul)
+- **RDKit** (render struktur molekul; package pip: `rdkit-pypi`)
 - **SQLite + SQLAlchemy ORM**
 - **JWT Auth** (`python-jose`) + hashing password (`passlib[bcrypt]`)
 - **Pandas + NumPy** untuk filtering & ranking
@@ -312,7 +318,7 @@ Body:
 **GET** `/structure?smiles=CC(=O)CC`  
 Returns: `image/png` (struktur 2D)
 
-> Contoh SMILES di atas adalah **2-butanone**. Silakan ganti sesuai senyawa.
+> Contoh SMILES di atas adalah **2-butanone (MEK)**. Silakan ganti sesuai senyawa.
 
 ### Metadata
 **GET** `/metadata`
@@ -329,7 +335,7 @@ Returns: `image/png` (struktur 2D)
 
 ## 🗂️ Project Structure
 
-```
+```text
 chemai/
 ├── agent/                          # Backend Python
 │   ├── agents/
@@ -518,8 +524,7 @@ Distributed under the **ISC License**. Lihat file `LICENSE`.
 
 **ChemAI Development Team**  
 Contact:
-- Email: `yourmail@mail.com`
-- GitHub: `github.com/your-username/chemai`
+- Email: `chemicalai2025@mail.com`
 
 ---
 
