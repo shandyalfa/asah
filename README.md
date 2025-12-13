@@ -10,9 +10,9 @@ Platform **Agentic AI** untuk eksplorasi dan penemuan kandidat senyawa petrokimi
 
 > Tambahkan file gambar ke folder `docs/images/` lalu update path berikut.
 
-![ChemAI Screenshot 1](docs/images/screenshot-1.png)
+<img width="646" height="234" alt="image" src="https://github.com/user-attachments/assets/c2a42715-8bd8-4e8e-957d-09fafd22db02" />
 ![ChemAI Screenshot 2](docs/images/screenshot-2.png)
-![ChemAI Screenshot 3](docs/images/screenshot-3.png)
+<img width="285" height="77" alt="image" src="https://github.com/user-attachments/assets/77f401d3-36fa-4f87-b4ba-3e08f174cd08" />
 ![ChemAI Screenshot 4](docs/images/screenshot-4.png)
 
 ---
