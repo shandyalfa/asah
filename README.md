@@ -87,8 +87,8 @@ npm --version      # >= 9
 
 ### 1) Clone repository
 ```bash
-git clone https://github.com/your-username/chemai.git
-cd chemai
+git clone https://github.com/muhshandy2105-a11y/CAPSTONE-ASAH-Led-By-Decoding-2025.git
+cd CAPSTONE-ASAH-Led-By-Decoding-2025
 ```
 
 ### 2) Backend setup (Python)
@@ -183,7 +183,8 @@ npm run start-dev
 ```
 
 Akses:
-- Frontend: `http://localhost:3000`
+- Frontend dev: `http://localhost:9000`
+- Frontend build: `http://localhost:8080`
 - Swagger: `http://localhost:8000/docs`
 - Redoc: `http://localhost:8000/redoc`
 
@@ -210,7 +211,7 @@ uvicorn agent.main:app --host 0.0.0.0 --port 8000 --workers 4
 
 ### 1) Registrasi
 Buka:
-- `http://localhost:3000/#/register`
+- `http://localhost:9000/#/register`
 
 Isi:
 - Name
@@ -218,7 +219,7 @@ Isi:
 - Password (min. 8 karakter)
 
 ### 2) Login
-- `http://localhost:3000/#/login`  
+- `http://localhost:9000/#/login`  
 Token JWT disimpan di `localStorage`.
 
 ### 3) Mencari kandidat senyawa
@@ -435,7 +436,7 @@ pip uninstall rdkit rdkit-pypi
 pip install rdkit-pypi
 ```
 
-### Port 8000/3000 sudah dipakai
+### Port 8000/9000 sudah dipakai
 **macOS/Linux**
 ```bash
 lsof -ti:8000 | xargs kill -9
@@ -458,7 +459,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
